@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addon addon_id="mobileAppApi" title="[kiror][API] Mobile App" version_string="0.0" version_id="0" url="https://github.com/adlerosn/" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+  <admin_navigation/>
+  <admin_permissions/>
+  <admin_style_properties/>
+  <admin_templates/>
+  <admin_template_modifications/>
+  <code_events/>
+  <code_event_listeners/>
+  <cron/>
+  <email_templates/>
+  <email_template_modifications/>
+  <optiongroups>
+    <option option_id="chatMobilePrefix" edit_format="textbox" data_type="string" can_backup="1">
+      <default_value>{mobile}</default_value>
+      <edit_format_params></edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="siropu_chat" display_order="4"/>
+    </option>
+  </optiongroups>
+  <permissions>
+    <permission_groups/>
+    <permissions/>
+    <interface_groups/>
+  </permissions>
+  <phrases>
+    <phrase title="option_chatMobilePrefix" version_id="0" version_string="0.0"><![CDATA[Prefix for mobile]]></phrase>
+    <phrase title="option_chatMobilePrefix_explain" version_id="0" version_string="0.0"><![CDATA[Prefix that will be added to users who type from mobile app's API.]]></phrase>
+  </phrases>
+  <route_prefixes>
+    <route_type type="public">
+      <prefix original_prefix="mobile-api" class="mobileAppApi_RoutePrefix_MobileApi" build_link="all"/>
+    </route_type>
+  </route_prefixes>
+  <style_properties/>
+  <templates/>
+  <public_template_modifications/>
+  <bb_code_media_sites/>
+  <bb_codes/>
+</addon>
